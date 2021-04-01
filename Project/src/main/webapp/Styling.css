@@ -1,0 +1,16 @@
+body {  
+    margin: 0;  
+    padding: 0;  
+    background-color:#58b3dde1;  
+    text-align: center;
+}  
+div {  
+        width: 500px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px; 
+        padding: 80px;  
+        background: lavender;  
+        border-radius: 15px ;  
+        font-weight: bold;
+} 
