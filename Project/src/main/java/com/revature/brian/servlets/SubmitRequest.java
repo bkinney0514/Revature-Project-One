@@ -50,7 +50,7 @@ public class SubmitRequest extends HttpServlet {
 		String status = "Pending";
 		
 		Reimbursements requests = new Reimbursements(reimb_id, emp_id, amount, reason, status);
-		submit.insertIntoReimbursements(requests);
+		Boolean result = submit.insertIntoReimbursements(requests);
 		
 		String success = "<head>\r\n"
 				+ "<meta charset=\"ISO-8859-1\">\r\n"
@@ -108,7 +108,7 @@ public class SubmitRequest extends HttpServlet {
 				+ "\r\n"
 				+ "</div>"
 				+ "</body>";
-		if(submit.insertIntoReimbursements(requests) != false) {
+		if(result != false) {
 			out.print(success);
 
 		} else {
